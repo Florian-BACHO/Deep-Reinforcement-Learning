@@ -3,8 +3,6 @@
 import tensorflow as tf
 import numpy as np
 import gym
-from collections import namedtuple
-import time
 
 ENV_NAME = "CartPole-v0"
 METHOD_NAME = "Cross Entropy"
@@ -16,9 +14,6 @@ LEARNING_RATE = 1e-2
 BATCH_SIZE = 16
 PERCENTILE = 70
 SOLVED_LIMIT = 199
-
-#Episode = namedTuple("Episode", "reward steps")
-#EpisodeStep = namedtuple("EpisodeStep", "observation action")
 
 class NeuralNet:
     def __init__(self, nbEntry, nbHiddens, nbOut, learningRate=1e-2):
